@@ -1,8 +1,19 @@
 public class EmpWageComputation
  {
-    public static void main(String[] args)
+	public static void main(String args[]) 
 	{
-	   System.out.println("Welcome To Employee Wage Computation Program");
+		// CONSTANTS
+		int IS_FULL_TIME = 1;
+		//COMPUTATION
+		int empCheck = (int) ( Math.random() * 10 ) % 2;
+		System.out.println(empCheck);
+		if ( empCheck == IS_FULL_TIME )
+		{
+			System.out.println( "Emplyee is Present" );
+		}
+		else
+		{
+			System.out.println( "Employee is Absent" );
+		} 
 	}
-
-  }
+}
